@@ -20,6 +20,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -31,7 +33,9 @@ import com.example.tasteadventure.presentation.component.SpacerVertical
 import com.example.tasteadventure.presentation.util.NormalText
 import com.example.tasteadventure.ui.theme.bgColor
 import com.example.tasteadventure.ui.theme.bottomBarBGColor
+import com.example.tasteadventure.ui.theme.colorBlack
 import com.example.tasteadventure.ui.theme.darkCardColor
+import com.example.tasteadventure.ui.theme.darkOrangeColor
 import com.example.tasteadventure.ui.theme.fontMedium
 import com.example.tasteadventure.ui.theme.fontSemiBold
 import com.example.tasteadventure.ui.theme.lightBottomBarBGColor
@@ -53,7 +57,38 @@ fun PaymentScreen(navController: NavController) {
                 secondIconClick = { /*TODO*/ }
             )
         },
-        content = { PaymentScreenBody() }
+        content = { PaymentScreenBody() },
+        bottomBar = {
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                verticalArrangement = Arrangement.Top,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Box(
+                    modifier = Modifier
+                        .padding(bottom = 10.dp)
+                        .size(90.dp)
+                        .clip(shape = CircleShape)
+                        .background(darkOrangeColor),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.ic_fingureprint),
+                        contentDescription = "",
+                        modifier = Modifier.size(45.dp),
+                        colorFilter = ColorFilter.tint(whiteColor)
+                    )
+                }
+                NormalText(
+                    label = "Tap to Pay",
+                    style = fontSemiBold.copy(color = bottomBarBGColor, fontSize = 16.sp),
+                    maxLine = 1,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier,
+                )
+                SpacerVertical(height = 20.dp)
+            }
+        }
     )
 }
 
@@ -108,7 +143,11 @@ fun PaymentScreenBody() {
                 verticalArrangement = Arrangement.SpaceAround,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
                     Image(
                         painter = painterResource(id = R.drawable.ic_card_logo),
                         contentDescription = "",
@@ -131,7 +170,11 @@ fun PaymentScreenBody() {
                     modifier = Modifier,
                 )
 
-                Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
                     NormalText(
                         label = "Peter Walker",
                         style = fontMedium.copy(color = whiteColor, fontSize = 16.sp),
@@ -148,6 +191,22 @@ fun PaymentScreenBody() {
                     )
                 }
             }
+        }
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(bottom = 120.dp),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            NormalText(
+                label = "$125.00",
+                style = fontSemiBold.copy(color = bottomBarBGColor, fontSize = 55.sp),
+                maxLine = 1,
+                textAlign = TextAlign.Center,
+                modifier = Modifier,
+            )
         }
     }
 }

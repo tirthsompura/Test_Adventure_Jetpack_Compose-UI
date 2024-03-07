@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b954e16-3365-435b-9eff-f04b91041ca2" name="Changes" comment="" />
+    <list default="true" id="3b954e16-3365-435b-9eff-f04b91041ca2" name="Changes" comment="s">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tasteadventure/presentation/payment/PaymentScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tasteadventure/presentation/payment/PaymentScreen.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +24,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/home/mqa-2/.android/avd/Nexus_4_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/home/mqa-2/.android/avd/Pixel_7_API_31.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -48,19 +59,19 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/home/mqa-2/Documents/Wead",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mqa-2/Documents/Wead&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Taste_Adventure.app.main" />
@@ -137,6 +148,19 @@
       <option name="presentableId" value="Default" />
       <updated>1709803576017</updated>
     </task>
+    <task id="LOCAL-00001" summary="s">
+      <option name="closed" value="true" />
+      <created>1709804150538</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709804150538</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="s" />
+    <option name="LAST_COMMIT_MESSAGE" value="s" />
   </component>
 </project>
